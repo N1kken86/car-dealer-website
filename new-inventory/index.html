@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Inventory</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/car-icon.png">
+        <link rel="stylesheet" href="../style.css" media="screen">
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <!--Global header & navigation-->
+            <header>
+                <h1>Your Local Car Dealer</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">New Inventory</a></li>
+                    <li><a href="../used-inventory/index.html">Used Inventory</a></li>
+                    <li><a href="../quote.html">Quote</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Main content-->
+            <main>
+                <div class="inventory-container">
+
+                    <!--Vehicle Filters-->
+                    <div class="vehicle-filters">
+                        <h2>Filters</h2>
+
+                        <h3>Make</h3>
+                        <form>
+                            <input type="checkbox" id="toyota" name="toyota" value="toyota">
+                            <label>Toyota</label><br>
+                            <input type="checkbox" id="honda" name="honda" value="honda">
+                            <label>Honda</label><br>
+                        </form>
+
+                        <h3>Year</h3>
+                        <form>
+                            <input type="checkbox" id="year2022" name="year2022" value="year2022">
+                            <label>2022</label><br>
+                            <input type="checkbox" id="year2021" name="year2021" value="year2021">
+                            <label>2021</label><br>
+                        </form>
+
+                        
+                        <h3>Type</h3>
+                        <form>
+                            <input type="checkbox" id="compact" name="compact" value="compact">
+                            <label>Compact</label><br>
+                            <input type="checkbox" id="sedan" name="sedan" value="sedan">
+                            <label>Sedan</label><br>
+                            <input type="checkbox" id="crossover" name="crossover" value="crossover">
+                            <label>Crossover</label><br>
+                            <input type="checkbox" id="suv" name="suv" value="suv">
+                            <label>SUV</label><br>
+                            <input type="checkbox" id="truck" name="truck" value="truck">
+                            <label>Truck</label><br>
+                            <input type="checkbox" id="sports" name="sports" value="sports">
+                            <label>Sports</label><br>
+                        </form>
+
+                        <h3>Price Range</h3>
+                        <form>
+                            <input type="checkbox" id="pricelt5k" name="pricelt5k" value="pricelt5k">
+                            <label>Under $5K</label><br>
+                            <input type="checkbox" id="price5kto10k" name="price5kto10k" value="price5kto10k">
+                            <label>$5K - $10K</label><br>
+                            <input type="checkbox" id="price10kto20k" name="price10kto20k" value="price10kto20k">
+                            <label>$10K - $20K</label><br>
+                            <input type="checkbox" id="price20kto30k" name="price20kto30k" value="price20kto30k">
+                            <label>$20K - $30K</label><br>
+                            <input type="checkbox" id="price30kto40k" name="price30kto40k" value="price30kto40k">
+                            <label>$30K - $40K</label><br>
+                            <input type="checkbox" id="price40kto50k" name="price40kto50k" value="price40kto50k">
+                            <label>$40K - $50K</label><br>
+                        </form>
+
+                    </div>
+
+                    <!--Vehicles Container-->
+                    <div class="figure-container">
+                        <figure>
+                                <img src="../images/honda-civic-hatchback.PNG" alt="Civic HatchBack">
+                                <figcaption><a href="honda-civic-2022.html">2022 Honda Civic Hatchback</a><br>
+                                Starting at $28,000</figcaption>
+                        </figure>
+
+                        <figure>
+                                <img src="../images/toyota-camry.png" alt="Toyota Camry">
+                                <figcaption><a href="toyota-camry-2022.html">2022 Toyota Camry</a><br>
+                                Starting at $27,510</figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </main>
+
+            <!--Global footer, copyright-->
+            <footer>
+                <address>Copyright &copy; 2021 Guanming Liu 100301345</address>
+            </footer>
+        </div>
+    </body>
+</html>

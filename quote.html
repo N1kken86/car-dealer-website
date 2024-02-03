@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quote</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/car-icon.png">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <script src="script.js"></script>
+    </head>
+    <body onload="popData()">
+        <div id="wrapper">
+            <!--Global header & navigation-->
+            <header>
+                <h1>Your Local Car Dealer</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="new-inventory/index.html">New Inventory</a></li>
+                    <li><a href="used-inventory/index.html">Used Inventory</a></li>
+                    <li><a href="quote.html">Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Main content-->
+            <main>
+                <div class="info">
+                    <h2>Get a Quote!</h2>
+
+                    <form autocomplete="on">
+                        <fieldset>
+                            <legend>Vehicle</legend>
+                            <br>
+                            <label for="condition">Vehicle Condition:</label>
+                            <select id="condition" name="condition">
+                                <option id="new" value="new" selected>New</option>
+                                <option id="used" value="used">Used</option>
+                            </select>
+                            <br><br>
+
+                            <label for="make">Make:</label>
+                            <select id="make" name="make">
+                                <option selected disabled hidden>Select</option>
+                                <option id="toyota" value="Toyota">Toyota</option>
+                                <option id="honda" value="Honda">Honda</option>
+                                <option id="kia" value="KIA">KIA</option>
+                            </select>
+                            <br><br>
+                            
+                            <label>Model: <input type="text" name="model" id="model"></label><br><br>
+
+                            <label>Make Year: <input type="number" name="year" id="year" min="1900" max="2022"></label><br><br>
+                        </fieldset>
+                        <br>
+                        
+                        <fieldset>
+                            <legend>Your Contact Info</legend>
+                            <br>
+                            <label>Your Name: <input type="text" name="name" id="name"></label><br><br>
+                            <label>Phone Number: <input type="text" name="phone" id="phone"></label><br><br>
+                            <label>E-mail: <input type="text" name="email" id="email"></label><br><br>
+
+                            <label for="comments">Comments to let us know:</label><br>
+                            <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+
+                            <p>Our sales person will contact you as soon as possible!</p><br>
+
+                            <input type="submit" class="submit">
+                            <br>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+
+            <!--Global footer, copyright-->
+            <footer>
+                <address>Copyright &copy; 2021 Guanming Liu 100301345</address>
+            </footer>
+        </div>
+    </body>
+</html>

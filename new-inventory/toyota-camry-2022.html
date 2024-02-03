@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toyota Camry 2022</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/car-icon.png">
+        <link rel="stylesheet" href="../style.css" media="screen">
+        <script src="../script.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <!--Global header & navigation-->
+            <header>
+                <h1>Your Local Car Dealer</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">New Inventory</a></li>
+                    <li><a href="../used-inventory/index.html">Used Inventory</a></li>
+                    <li><a href="../quote.html">Quote</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Main content-->
+            <main>
+                
+                <div class="vehicle-container">
+
+                    <h2>Toyota Camry 2022</h2>
+                    <p>Starting from $27,150</p>
+                    <!--Navigation Tabs Bar-->
+                    <div class="nav-tab-bar">
+                        <button class="nav-tab-button" onclick="openTab('features')">Features</button>
+                        <button class="nav-tab-button" onclick="openTab('specification')">Specification</button>
+                        <button class="nav-tab-button quote" onclick="updateLastVehicle('new','toyota', 'Camry', 2022), document.location='../quote.html'">Get A Quote!</button>
+                    </div>
+
+                    <!--Features tab-->
+                    <div id="features" class="tab-content">
+                        <img src="../images/toyota-camry.png" alt="2022 Toyota Camry">
+                        <p>
+                            Toyota Safety Sense 2.5+™<br><br>
+                            Blind Spot Monitor with Rear Cross Traffic Alert<br><br>
+                            Bird’s Eye View Camera<br><br>
+                            Apple CarPlay® / Android Auto™<br><br>
+                            10” HEAD-UP DISPLAY<br><br>
+                            Anti-Lock Brake System<br><br>
+                            Brake Assist<br><br>
+                            Smart Stop Technology<br><br>
+                            Vehicle Stability Control<br><br>
+                            Traction Control<br><br>
+                            Electronic Brake Force Distribution<br><br>
+                        </p>
+                    </div>
+                    
+                    <!--Specification tab-->
+                    <div id="specification" class="tab-content" style="display:none">
+                        <table>
+                            <tr>
+                                <th>Engine</th>
+                                <th>LE</th>
+                            </tr>
+                            <tr>
+                                <td>Engine</td>
+                                <td>2.5 Litre 4-cylinder DOHC 16-Valve</td>
+                            </tr>
+                            <tr>
+                                <td>Horsepower (kW)</td>
+                                <td>203</td>
+                            </tr>
+                            <tr>
+                                <th>Fuel Economy</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Fuel Consumption - City/Highway/Combined</td>
+                                <td>8.5/6.1/7.4 L/100km</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>Dimensions</th>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Cargo volume (L)</td>
+                                <td>428</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Fuel tank capacity (L)</td>
+                                <td>61</td>
+                            </tr>
+                            <tr>
+                                <td>Height (mm)</td>
+                                <td>1445</td>
+                            </tr>
+                            <tr>
+                                <td>Length (mm)</td>
+                                <td>4880</td>
+                            </tr>
+                            <tr>
+                                <td>Width (mm)</td>
+                                <td>1839</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </main>
+
+            <!--Global footer, copyright-->
+            <footer>
+                <address>Copyright &copy; 2021 Guanming Liu 100301345</address>
+            </footer>
+        </div>
+    </body>
+</html>

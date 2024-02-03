@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(53, 219, 192);
+}
+
+#wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 95%;
+    min-height: 960px;
+    position: relative;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px;
+    overflow: auto;
+}
+
+/* styling header */
+header {
+    background-image: url("images/car-icon.png"), linear-gradient(to right, rgba(19, 46, 19, 0.062), silver,lightgreen);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+header h1 {
+    text-shadow: 2px 2px 2px lightblue;
+    margin: 0;
+    padding: 5px;
+    padding-left: 60px;
+}
+
+/* styling nav */
+nav {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none; 
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(34, 32, 32); 
+}
+nav li{
+    display: inline;
+    line-height: 200%;
+    padding: 20px 20px;
+}
+nav li:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: wheat;
+}
+
+/* styling main */
+main {
+    padding: 0;
+    margin: 0;
+}
+
+/* Home Page */
+.new-vehicles, .used-vehicles{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-page h2 {
+    background-color: rgb(241, 238, 238);
+    padding: 8px 20px;
+}
+
+#promotion-img{
+    width: 100%;
+    max-height: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+figure img {
+    max-width: 350px;
+    background-color: white;
+}
+figure:hover {
+    box-shadow: 2px 2px 5px ;
+}
+
+/* Inventory Page*/
+.vehicle-container, .inventory-container {
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    overflow: auto;
+}
+
+    /* filter bar*/
+.vehicle-filters {
+    float: left;
+    border: 2px blanchedalmond solid;
+    padding-left: 5px;
+    min-height: 500px;
+    overflow: auto;
+}
+.vehicle-filters h2{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.vehicle-filters label {
+    padding-right: 5px;
+}
+
+    /* vehicles panel*/
+.figure-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+/* Vehicle Page*/
+    /* sticky navigation tab */
+.nav-tab-bar {
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    margin-top: 20px;
+    position: sticky;
+    top: 10px;
+    background-color: rgb(156, 235, 137);
+}
+.nav-tab-button {
+    color: white;
+    background-color: rgb(53, 194, 219);
+    font-size: 1.1em;
+    border: none;
+    line-height: 200%;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+.nav-tab-button:hover {
+    cursor: pointer;
+}
+
+    /* quote button*/
+.quote {
+    background-color: azure;
+    color: rgb(14, 229, 236);
+    border: 2px solid azure;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.quote:hover, .quote:active {
+    border: 2px solid aqua;
+}
+    /* vehicle image*/
+.tab-content img {
+    text-align: center;
+    margin: 1em 30% 1em;
+}
+
+    /* table */
+table td,th{
+    border-bottom: 2px grey solid;
+    text-align: center;
+    padding: 10px 0;
+}
+table {
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+/* Quote Page */
+.info {
+    margin-left: 25%;
+    padding: 20px;
+}
+
+    /* form */
+form fieldset {
+    width: 40%;
+    border: 3px solid aqua;
+}
+form fieldset legend {
+    background-color:  aqua;
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+    /* submit button */
+.info input[type=submit]{
+    background-color: azure;
+    color: rgb(14, 229, 236);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* styling footer */
+footer {
+    background-color: lightblue;
+    text-align: center;
+    font-size: .85em;
+    font-style: italic;
+    margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ===============================
+   Media Queries
+   ===============================
+*/
+/* tablet view */
+@media only screen and (max-width: 1024px) {
+    /* no margin on wrapper*/
+    body {
+        margin: 0;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    
+}
+
+/* mobile view */
+@media only screen and (max-width: 768px) {
+    header {
+        background-image: linear-gradient(to right, rgba(19, 46, 19, 0.062), silver,lightgreen)
+    }
+    header h1 {
+        padding-left: 0;
+    }
+
+    /* vertical nav */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    nav li{
+        border-bottom: 5px solid rgb(109, 196, 207);
+    }
+
+    /* vertical vehicle tabs */
+    .new-vehicles, .used-vehicles {
+        flex-direction: column;
+    }
+
+    /* tighter navigation tab buttons*/
+    .nav-tab-bar {
+        text-align: left;
+    }
+    .quote {
+        padding: 0;
+        
+    }
+    /* Inventory Page*/
+    .vehicle-container, .inventory-container {
+        margin: 0;
+        width: 100%;
+    }
+    .vehicle-filters {
+        padding-left: 0;
+        margin: 0;
+    }
+    .figure-container {
+        flex-direction: column;
+    }
+}
